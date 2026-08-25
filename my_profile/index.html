@@ -1,0 +1,51 @@
+# 웹사이트의 내용과 구조
+
+<!DOCTYPE html> # 브라우저에게 "이 문서는 HTML5 문서입니다"를 알리는 코드
+<html lang="ko">
+<head> # 직접 보이지 않는 웹페이지 설정 정보
+    <meta charset="UTF-8"> # 문자 인코딩 방식
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>김태정 ㅣ AI student</title>
+
+    <link rel="stylesheet" href="style.css"> # html과 css를 연결하는 코드
+
+</head>
+
+<body> # body 내부에 작성한 내용은 실제 웹사이트에 드러남
+
+    <!-- 상단 메뉴 -->
+     <header>
+        <nav> # 다른 웹페이지로 이동하거나 현재 웹페이지의 콘텐츠 내부로 이동하는 링크가 있는 영역
+            <h1 class="logo">TAEJEONG</h1> <!-- 로고 -->
+
+            <ul class="nav_menu"> <!-- 메뉴, ul은 목록전체를 의미, li는 목록의 각각의 항목을 의미 -->
+                <li><a href="#about">About</a></li> <!-- <a href="...">...</a> : 클릭 가능한 링크를 만드는 태그-->
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects"></a></li>
+                <li><a href="#contact"></a></li>
+            </ul>
+        </nav>
+     </header>
+
+     <!-- 메인 화면 -->
+      <section class="hero"> <!-- section : 웹페이지의 하나의 영역, 첫번째 화면 이름 : hero -->
+
+        <div class="hero_content"> <!-- class는 여러 요소에 같은 이름을 사용할 수 있음 -->
+                                   <!-- id는 기본적으로 하나으 요소를 식별하기 위해 사용됨 -->
+
+            <p class="intro">Hello, I'm</p>
+
+            <h2>김태정</h2>
+
+            <h3>AI & Machine  Learning student</h3>
+
+            <p class="description">
+                인공지능과 대규모 언어 모델으 탐구하며
+                새로운 기술을 직접 고찰하는 개발자가 되기 위해
+                열심히 공부 중 입니다.
+            </p>
+        </div>"
+      </section>
+</body>
