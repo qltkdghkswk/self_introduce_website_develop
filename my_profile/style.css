@@ -1,1 +1,30 @@
 /* 색상, 크기, 위치 등 디자인 */
+
+/* 전체 설정 */
+
+* {                 /* * : 모든 HTML요소를 의미함, 모든 요소의 기본 여백을 제거하는 코드 */
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+/* 상단 메뉴 */
+
+header {
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #111827;
+}
+
+nav {
+    display: flex; /* display: flex를 사용하면 구성 요소들을 유연하게 배치 가능 */
+    justify-content: sapce-between; /* 첫번째 요소와 마지막 요소를 양쪽 끝으로 보냄 */
+    align-items: center; /* 세로 방향에서 가운데로 정렬함 */
+}
+
